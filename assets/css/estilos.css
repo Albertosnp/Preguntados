@@ -1,0 +1,400 @@
+html,body{
+    height: 100%;
+    margin: 0;  
+    padding: 0;
+    width: 100%;
+}
+body{
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+}
+*{
+    font-family: bubble;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: bubble;
+    src: url(../fonts/Bubble\ Bobble.ttf);
+}
+header {
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+header img{
+    width: 380px;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 4.3em;
+    text-shadow: 4px 3px black;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+    margin-bottom: 0px;
+}
+h3{
+    font-size: 3em;
+    text-shadow: 4px 3px black;
+}
+/* Bloque general */
+.bloque{
+    background-color: rgb(62, 69, 79);
+    border-radius: 20px;
+    display: flex;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 30px auto 50px;
+    color: white;
+    box-shadow: rgb(2, 2, 2) 3px 5px 5px;
+    overflow: hidden;
+}
+/* Footer */
+.pie{
+    display: flex;
+    background-color: rgb(50, 40, 134);
+    color: white;
+    margin-top: 20px;
+    width: 100%;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;  
+}
+/* Bloques del index */
+.centrales{
+    background-color: darkgrey;
+    border-radius: 20px;
+    padding: 20px;
+    height: 50%;
+    width: 350px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 3px 2px 1px black;
+    box-shadow: rgb(2, 2, 2) 1px 5px 5px;
+    overflow: hidden;
+}
+/* Estilos a botones inputs y selects*/
+input, select, button{
+    border-radius: 5px;
+}
+#ranking{
+    position: absolute;
+    top: 20%;
+    font-size: 3.2em;
+    padding: 10px;
+    color: rgb(253, 165, 0);
+}
+#records{
+    padding: 0;
+    overflow: hidden;
+    text-align: left;
+    font-size: 1.3em;
+}
+.boton{
+    padding: 10px;
+    font-size: 23px;
+    margin: 15px;
+    font-size: x-large;
+    font-size: 2.2em;
+    border-radius: 20px;
+    background-color: rgb(253, 165, 0);
+    box-shadow: rgb(46, 46, 46) 1px 5px 5px;
+}
+.boton a{
+    text-decoration: none;
+    color: white;
+    font-family: bubble;
+}
+.boton a:hover{
+    color: rgb(133, 112, 253);
+    transition: 0.25s;
+}
+/* Bloques de editar preguntas */
+.bloque-editar{
+    background-color: rgb(62, 69, 79);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 30px auto 70px;
+    color: white;
+    box-shadow: rgb(2, 2, 2) 3px 5px 5px;
+}
+.bloque-editar h3{
+    color: rgb(253, 165, 0);
+}
+.bloque-editar input, select, label{
+    font-size: 1.2em;
+}
+.central-editar{
+    background-color: darkgray;
+    border-radius: 20px;
+    padding: 20px;
+    height: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    margin-top: 0;
+    overflow: hidden;
+}
+.tematica{
+    padding: 30px;  
+    text-shadow: black 3px 3px 3px;
+}
+.tematica select{
+    font-size: 0.7em;
+}
+#pregunta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    box-shadow: rgb(2, 2, 2) 3px 5px 5px;
+    border-radius: 10px;
+}
+.respuestas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    margin: 10px;
+}
+#respuestas{
+    height: 30px;
+    align-items: center;
+    flex-direction: row;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-shadow: black 1px 4px 3px;
+    font-size: 1.2em;
+}
+.opcionRespuesta{
+    width: 100%;
+    height: 20px;
+    margin: 8px;
+}
+
+#pregunta textarea{
+    max-width: 500px;
+    min-width: 500px;
+    max-height: 300px;
+    min-height: 300px;
+    font-size: 0.8em;
+    border-radius: 10px;
+    border: none;
+}
+.correcta{
+    text-shadow: black 1px 3px 3px;
+    font-size: 1.3em;
+}
+#correcta{
+    margin-top: 20px;
+    color: black;
+    width: 50px;
+}
+.botones-editar{
+    display: flex;
+    width: 400px;
+    justify-content: space-evenly;  
+}
+.botones-editar a, input, button{
+    text-decoration: none;
+    color: black;
+    width: 110px;
+    height: 30px;  
+}
+.botones-glv{
+    background-color: rgb(253, 165, 0);
+    box-shadow: rgb(46, 46, 46) 1px 5px 5px;
+    color: white;
+    text-shadow: 3px 2px 1px black;
+    width: 200px;
+    height: 35px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+.botones-editar select{
+    font-size: 1.5em;
+}
+/* estilos game.php */
+#registro{
+    flex-direction: column;
+    height: 600px;
+}
+#registro h3{
+    margin-top: 60px;
+}
+#nombreJugador {
+    padding-top: 10px;
+    height: 40%;
+    width: 40%;  
+    font-size: 2em;
+    background-color: darkgray;
+    color: white;
+    text-shadow: 3px 2px  black; 
+}
+#nombreJugador label{
+    font-size: 0.8em;
+}
+#nombreJugador input{
+    width: 150px;
+    font-size: 0.7em;
+}
+#partida{
+    height: 700px;
+    background-color: transparent;
+}
+.bloque-editar #nombre{
+    margin: 30px;
+    width: 200px;
+}
+.bloque-pregunta{
+    height: 100%;
+    width: 70%;
+}
+#tema{
+    background-color: rgb(33, 101, 197); 
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    display: flex;
+    height: 140px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    text-shadow: 3px 2px  black;
+}
+#enunciado{
+    width: auto;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    background-color: lightgray;
+    color: black;
+}
+#opciones{
+    overflow: hidden;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin:auto;
+    height: 380px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: rgb(62, 69, 79); 
+}
+#opciones button{
+    margin: 15px;
+    width: 350px;
+    height: 50px;
+    font-size: 1.3em;
+}
+/* Bloque que tiene el nombre, puntuacion y acertadas/falladas */
+.nombre-puntuacion{
+    height: 100%;
+    width: 30%;
+    margin-top: 0px;
+    margin-left: 0px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    box-shadow: rgb(2, 2, 2) 3px 5px 5px;
+}
+.jugador{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.8em;
+    background-color:  rgb(253, 165, 0);
+}
+.jugador p{
+    text-shadow: 3px 2px 1px black;
+    color: white;
+    padding: 10px;
+    margin: 3px;
+}
+.tematica-side{
+    font-size: 30px;
+    margin: 0;
+}
+.tematicas{
+    color: black;
+    overflow: hidden;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color:rgb(253, 250, 251);
+}
+/* Estilos de pantalla final "final"*/
+#bloque-final{
+    height: auto;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.puntuacion-final{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-shadow: black 1px 2px 2px;
+}
+.tu-puntuacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color:  rgb(253, 165, 0);
+}
+.img-final{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2em;
+    padding: 20px;
+}
+.img-final img{
+    width: 200px;
+}
+#bloque-final input{
+    margin-top: 10px;
+    font-size: 1.2em;
+    width: auto;
+}
+/* estilos para mensajes de error */
+.error{
+    color: red;
+    font-size: 1.2em;
+}
+/* estilos para los aciertos*/
+.acierto{
+    color: green;
+    font-size: 1.2em;
+}
