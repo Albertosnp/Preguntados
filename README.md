@@ -1,2 +1,2 @@
 # Preguntados
-Juego de preguntas
+Juego de preguntas realizado en php, html y css
